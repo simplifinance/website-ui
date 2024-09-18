@@ -35,7 +35,7 @@ const Hero = () => {
           relationships between parties.
         </p>
         <div className="flex flex-col xss:flex-row w-full  justify-center font-extrabold mb-10">
-          <a href="">
+          <a href="https://simplifi-st5h.vercel.app/">
             {" "}
             <button
               className={[
