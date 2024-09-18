@@ -11,7 +11,7 @@ const TopBar = ({ isClicked, handleClick }) => {
             <Link href="/">
               <a>
                 <img
-                  src="/images/navbar/logo.svg"
+                  src="/images/navbar/logoSimplifi.png"
                   alt="Logo"
                   className="w-[80px] lg:w-[142px]"
                 />
