@@ -28,7 +28,7 @@ const SEOHead = ({ title, description, url, ogImage }) => {
       <meta property="og:image" content={ogImage} />
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="630" />
-      <link rel="icon" href="/favicon.ico" />
+      <link rel="icon" href="/favicon" />
       <meta name="msapplication-TileColor" content="#F9F4F4" />
       <meta name="theme-color" content="#F87C00" />
     </NextHead>
