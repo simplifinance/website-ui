@@ -8,7 +8,7 @@ export const problemsData = [
     id: 1,
     image: "images/problems/Security.svg",
     problem: "Security",
-    body: "Security problems with open and decentralized operators",
+    body: "Unpalatable security experiences with some open and decentralized operators",
   },
   {
     id: 2,

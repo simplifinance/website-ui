@@ -8,7 +8,7 @@ export const aboutData = [
     paragraph1: (
       <p className="mb-5">
         An ecosystem of decentralized, multifaceted & multifunctional
-        non-custodial protocols for safe crypto and non-crypto dealings.
+        non-custodial protocols for safe crypto dealings.
       </p>
     ),
     paragraph2: (

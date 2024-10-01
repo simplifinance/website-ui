@@ -24,15 +24,13 @@ const Hero = () => {
               "tracking-[-0.095em] md:leading-[5rem] xl:leading-[6rem] 1xl:leading-[8rem]",
             ].join(" ")}
           >
-            Enjoy <span className={styles.gradient}>Decentralised</span>{" "}
-            <span className={styles.gradient}>Protocols</span> Built On The
-            Blockchain
+            Enjoy <span className={styles.gradient}>Decentralised,</span>{" "}
+            <span className={styles.gradient}>Highly</span> Flexible Liquidity Pool 
+            To Improve Capital Efficienty
           </h1>
         </header>
         <p className="text-xl  lg:text-2xl text-center mx-auto my-8 mb-10 lg:my-10 md:w-9/12 xl:w-8/12 1xl:w-7/12">
-          We consistently build decentralized protocols, in a trustless
-          environments that manage both financial and non-financial
-          relationships between parties.
+          Create And Customize A Synergy Of Funds To Access Large And Expandable Loan With Little Or No Interest 
         </p>
         <div className="flex flex-col xss:flex-row w-full  justify-center font-extrabold mb-10">
           <a href="https://simplifi-st5h.vercel.app/">
