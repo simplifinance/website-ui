@@ -33,7 +33,7 @@ const Hero = () => {
           Create And Customize A Synergy Of Funds To Access Large And Expandable Loan With Little Or No Interest 
         </p>
         <div className="flex flex-col xss:flex-row w-full  justify-center font-extrabold mb-10">
-          <a href="https://simplifi-st5h.vercel.app/">
+          <a href="https://testnet.simplifinance.xyz/">
             {" "}
             <button
               className={[

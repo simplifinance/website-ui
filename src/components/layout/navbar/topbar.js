@@ -48,7 +48,7 @@ const TopBar = ({ isClicked, handleClick }) => {
             ></ActiveLink>
           </div>
           <li className="hidden lg:flex">
-            <a href="https://simplifi-st5h.vercel.app/">
+            <a href="https://testnet.simplifinance.xyz/">
               <button className={["underlineFromLeft", // css code in global.css
                 "font-bold bg-orange w-[174px] h-[60px] rounded-lg text-white1"].join(" ")}>
                 Go To App
