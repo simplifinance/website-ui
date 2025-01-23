@@ -26,7 +26,7 @@ const Hero = () => {
           >
             Enjoy <span className={styles.gradient}>Decentralised,</span>{" "}
             <span className={styles.gradient}>Highly</span> Flexible Liquidity Pool 
-            To Improve Capital Efficienty
+            To Improve Capital Efficiency
           </h1>
         </header>
         <p className="text-xl  lg:text-2xl text-center mx-auto my-8 mb-10 lg:my-10 md:w-9/12 xl:w-8/12 1xl:w-7/12">

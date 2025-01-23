@@ -19,9 +19,9 @@ export const solutionData = [
     ),
     paragraph3: (
       <p className="">
-        Our FlexPools bring true decentralization, control, and sense 
-        of responsibility to users since participants are providers 
-        and borrowers. A bad actor in a FlexPool pool can easily be 
+        Our FlexPool solution brings true decentralization, control, and sense 
+        of responsibility to users since contributors are providers 
+        as well as the borrowers. A bad actor in a FlexPool pool can easily be 
         identified, and the chance of succeeding is very tiny and almost
         impossible.
       </p>

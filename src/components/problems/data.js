@@ -2,17 +2,18 @@ export const problemsData = [
   {
     id: 0,
     sectionTitle: "The Problems We Solve",
-    subTitle: "Problems Simplifinance Address",
+    subTitle: "",
+    // subTitle: "Problems Simplifinance Address",
   },
   {
     id: 1,
-    image: "images/problems/Security.svg",
+    image: "images/problems/security.svg",
     problem: "Security",
-    body: "Unpalatable security experiences with some open and decentralized operators",
+    body: "Security risks associated with centralized-pool loan operators",
   },
   {
     id: 2,
-    image: "images/problems/Inflation.svg",
+    image: "images/problems/inflation.svg",
     problem: "Inflation",
     body: "Devastating effects of persistent inflation",
   },
@@ -38,6 +39,6 @@ export const problemsData = [
     id: 6,
     image: "images/problems/indefiniteLockOfFunds.svg",
     problem: "Indefinite Lock of Funds",
-    body: "Indefinite lock of funds on the blockchain plus inability to pass inheritance",
+    body: "Indefinite locking of funds on the blockchain, and the inability to pass inheritance",
   },
 ]
