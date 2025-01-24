@@ -6,10 +6,8 @@ import { useEffect, useState } from "react"
 import Spinner from "../Spinner"
 import React from "react"
 
-const Layout = ({ handleClick, isClicked, children }) => {
+const Layout : React.FC<{ handleClick: () => void, isClicked: boolean, children: React.ReactNode }> = ({ handleClick, isClicked, children }) => {
   const [loading, setLoading] = useState(true)
-
-  const windowIsDefined = typeof window !== "undefined"
 
   useEffect(() => {
     setTimeout(() => {

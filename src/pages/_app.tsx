@@ -1,5 +1,5 @@
 import "../styles/globals.css";
-import Layout from "../components/Layout/Layout";
+import Layout from "../components/Layout";
 import { useState } from "react";
 import SEOHead from "../components/SEOHead/SEOHead";
 import React from "react";
