@@ -27,20 +27,17 @@ const NavList : React.FC<{isClicked: boolean, handleClick: () => void}> = ({ isC
                 className="mb-5"
                 href="/"
                 handleClick={handleClick}
-                children={"Home"}
-              ></ActiveLink>
+              > Home </ActiveLink>
               <ActiveLink
                 className="mb-5"
                 href="/#learn"
                 handleClick={handleClick}
-                children={"Learn"}
-              ></ActiveLink>
+              >Learn</ActiveLink>
               <ActiveLink
                 className=""
                 href="/#footer"
                 handleClick={handleClick}
-                children={"Commuinity"}
-              ></ActiveLink>
+              >Commuinity</ActiveLink>
             </div>
 
             {/* social media icon */}
