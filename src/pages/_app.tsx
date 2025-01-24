@@ -1,10 +1,11 @@
-import "../styles/globals.css"
-import Layout from "../components/layout/layout"
-import { useState } from "react"
-import SEOHead from "../components/SEOHead/SEOHead"
-import React from "react"
+import "../styles/globals.css";
+import Layout from "../components/Layout/Layout";
+import { useState } from "react";
+import SEOHead from "../components/SEOHead/SEOHead";
+import React from "react";
+import type { AppProps } from 'next/app';
 
-const MyApp = ({ Component, pageProps }) => {
+const MyApp = ({ Component, pageProps } : AppProps) => {
   const [isClicked, setClicked] = useState(false)
 
   const handleClick = () => {

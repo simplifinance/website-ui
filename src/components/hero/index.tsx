@@ -1,9 +1,13 @@
 import React from "react"
 // @ts-ignore
 import styles from "./hero.module.css"
+import Link from "next/link"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faArrowAltCircleRight } from "@fortawesome/free-solid-svg-icons"
+
 const Hero = () => {
   return (
-    <section className="relative font-inter mb-10">
+    <section className="relative font-inter">
       <div className="absolute flex z-0 justify-between w-full top-[-5rem]">
         <img
           src="images/hero/hero-bg1.png"
@@ -29,11 +33,47 @@ const Hero = () => {
             To Improve Capital Efficiency
           </h1>
         </header>
-        <p className="text-xl  lg:text-2xl text-center mx-auto my-8 mb-10 lg:my-10 md:w-9/12 xl:w-8/12 1xl:w-7/12">
-          Create And Customize A Synergy Of Funds To Access Large And Expandable Loan With Little Or No Interest 
+        <p className="text-xl  lg:text-2xl text-center text-orange-200 mx-auto my-8 mb-10 lg:my-10 md:w-9/12 xl:w-8/12 1xl:w-7/12">
+          Create And Customize A FlexPool To Access Large And Expandable Loan With Little Or No Interest 
         </p>
-        <div className="flex flex-col xss:flex-row w-full  justify-center font-extrabold mb-10">
-          <a href="https://testnet.simplifinance.xyz/">
+        <div className="flex flex-col xss:flex-row w-full  justify-center gap-4 font-extrabold mb-10">
+          
+          <Link href="https://testnet.simplifinance.xyz/" target="_blank" className="w-full h-[40px] m-0 mb-3 xss:mb-0 xss:w-[130px] xss:h-[40px] lg:w-[312px] lg:h-[60px] xss:mr-[9px]  p-3 uppercase text-xs flex justify-center items-center gap-8 focus:shadow-sm focus:shadow-200 bg-green1 border border-gray1 rounded-full animate-none text-orange-400 shadow shadow-orange-400 hover:shadow-orange-200 ">
+            Go To App
+          </Link>
+            
+
+          <a href="">
+            {" "}
+            <button
+              className={[
+                "w-full h-[40px] m-0 mb-3 xss:mb-0 border-[1.5px]",
+                "xss:w-[130px] xss:h-[40px] lg:w-[312px] lg:h-[60px]",
+                "rounded-full bg-gray1 border-green1 text-orange-300 hover:shadow-sm hover:shadow-orange-300 xss:ml-[9px]",
+              ].join(" ")}
+            >
+              Learn
+            </button>
+          </a>
+        </div>
+        {/* <div className="mx-auto mt-10">
+          <a href="/#about" className="flex flex-col items-center">
+            <img
+              src="images/scrollDown.svg"
+              alt="scroll down"
+              className="w-[30px]"
+            />
+            <span className="text-base mt-2">Scroll down</span>
+          </a>
+        </div> */}
+      </div>
+    </section>
+  )
+}
+
+export default Hero
+
+          {/* <a href="https://testnet.simplifinance.xyz/">
             {" "}
             <button
               className={[
@@ -44,34 +84,4 @@ const Hero = () => {
             >
               Go To App
             </button>
-          </a>
-
-          <a href="">
-            {" "}
-            <button
-              className={[
-                "w-full h-[40px] m-0 mb-3 xss:mb-0 border-[1.5px]",
-                "xss:w-[130px] xss:h-[40px] lg:w-[312px] lg:h-[60px]",
-                "rounded-lg bg-tranparent border-white1 xss:ml-[9px]",
-              ].join(" ")}
-            >
-              Learn
-            </button>
-          </a>
-        </div>
-        <div className="mx-auto mt-10">
-          <a href="/#about" className="flex flex-col items-center">
-            <img
-              src="images/scrollDown.svg"
-              alt="scroll down"
-              className="w-[30px]"
-            />
-            <span className="text-base mt-2">Scroll down</span>
-          </a>
-        </div>
-      </div>
-    </section>
-  )
-}
-
-export default Hero
+          </a> */}

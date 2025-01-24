@@ -1,8 +1,21 @@
-module.exports = {
+import type { Config } from "tailwindcss";
+
+const config: Config = {
+  // content: [
+  //   "./pages/**/*.{js,ts,jsx,tsx,mdx}",
+  //   "./components/**/*.{js,ts,jsx,tsx,mdx}",
+  // ],
   content: ["src/**/*.js", "src/**/*.jsx", "src/**/*.ts", "src/**/*.tsx"],
   presets: [],
   darkMode: "media", // or 'class'
   theme: {
+    extend: {
+      backgroundImage: {
+        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
+        "gradient-conic":
+          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      },
+    },
     screens: {
       xss: "320px",
       xs: "412px",
@@ -22,10 +35,11 @@ module.exports = {
       slate: colors.slate,
       gray: colors.gray,
       zinc: colors.zinc,
+      orange: colors.orange,
       neutral: colors.neutral,
       stone: colors.stone,
       red: colors.red,
-      orange: "#F87C00", // custom orange
+      orangec: "#F87C00", // custom orange
       amber: colors.amber,
       yellow: colors.yellow,
       lime: colors.lime,
@@ -968,4 +982,5 @@ module.exports = {
     "disabled",
   ],
   plugins: [],
-}
+};
+export default config;

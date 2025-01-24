@@ -1,22 +1,15 @@
 // Page Layout
-import NavBar from "./navbar/navbar"
-import Footer from "./footer"
+import NavBar from "./Navbar"
+import Footer from "./Footer"
 import { useEffect, useState } from "react"
-import ScrollButton from "./scrollButton"
-import Spinner from "../spinner"
+// import ScrollButton from "./scrollButton"
+import Spinner from "../Spinner"
 import React from "react"
-// Navbar and Footer Component
 
 const Layout = ({ handleClick, isClicked, children }) => {
   const [loading, setLoading] = useState(true)
 
   const windowIsDefined = typeof window !== "undefined"
-  useEffect(() => {
-    if (windowIsDefined) {
-      window.WOW = require("wowjs")
-    }
-    new WOW.WOW().init()
-  }, [])
 
   useEffect(() => {
     setTimeout(() => {
@@ -36,7 +29,7 @@ const Layout = ({ handleClick, isClicked, children }) => {
       </section>
 
       <main className="relative font-gothic">
-        <ScrollButton windowIsDefined={windowIsDefined} />
+        {/* <ScrollButton windowIsDefined={windowIsDefined} /> */}
         <NavBar handleClick={handleClick} isClicked={isClicked} />
         {children}
         <Footer />
@@ -46,3 +39,10 @@ const Layout = ({ handleClick, isClicked, children }) => {
 }
 
 export default Layout
+
+  // useEffect(() => {
+  //   if (windowIsDefined) {
+  //     window.WOW = require("wowjs")
+  //   }
+  //   new WOW.WOW().init()
+  // }, [])

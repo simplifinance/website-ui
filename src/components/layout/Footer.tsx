@@ -1,31 +1,40 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import {
-  faDiscord,
-  faTwitter,
-  faYoutube,
-  faInstagram,
-  faReddit,
-} from "@fortawesome/free-brands-svg-icons"
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons"
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+// import {
+//   faDiscord,
+//   faTwitter,
+//   faYoutube,
+//   faInstagram,
+//   faReddit,
+// } from "@fortawesome/free-brands-svg-icons"
+// import { faEnvelope } from "@fortawesome/free-solid-svg-icons"
 import React from "react"
-import Socials from "../socials"
+import Socials from "../Socials"
 import Link from "next/link"
 
 const Footer = () => {
   return (
     <footer
-      className="bg-gray1 py-12 lg:py-[6rem] text-white font-inter"
+      className="bg-green1 border-t border-t-gray1/50 py-10 p-4 text-orange-400 font-inter space-y-12"
       id="footer"
     >
-      <div className="wrapper flex flex-col lg:flex-row justify-between">
-        <ul className="mb-[40px]">
-          <li>
-            <h1 className="font-nova-square text-3xl lg:text-5xl mb-[16px] lg:mb-[24px] ">
-              SimpliFinance
-            </h1>
-          </li>
-          <Socials />
-          <li className="mt-[16px] lg:mt-[24px] text-lg lg:text-xl">
+      <Socials />
+      <div className="wrapper opacity-50 text-xs md:text-sm text-center text-orange-200">
+        &copy;2025 SimpliFinance. All rights reserved.
+      </div>
+    </footer>
+  )
+}
+
+{/* <div className="wrapper flex flex-col lg:flex-row justify-between">
+  <ul className="">
+    {/* <li>
+      <h1 className="font-nova-square text-3xl lg:text-5xl mb-[16px] lg:mb-[24px] ">
+        SimpliFinance
+      </h1>
+    </li> */}
+export default Footer
+
+          {/* <li className="mt-[16px] lg:mt-[24px] text-lg lg:text-xl">
             {" "}
             <a
               href="mailto:officialemail@gmail.com"
@@ -44,12 +53,12 @@ const Footer = () => {
           </li>
           <li className="text-lg mb-[8px]">
             <Link href="/">
-              <a>Learn</a>
+              Learn
             </Link>{" "}
           </li>
           <li className="text-lg">
             <Link href="/">
-              <a>Community</a>
+              Community
             </Link>{" "}
           </li>
         </ul>
@@ -62,21 +71,13 @@ const Footer = () => {
           </li>
           <li className="text-lg mb-[8px]">
             <Link href="/">
-              <a>About Us</a>
+              About Us
             </Link>
           </li>
           <li className="text-lg">
             <Link href="/">
-              <a>Privacy Policy</a>
+              Privacy Policy
             </Link>{" "}
           </li>
         </ul>
-      </div>
-      <div className="wrapper text-lg lg:text-center lg:pt-[148px]">
-        &copy;2024 SimpliFinance. All rights reserved.
-      </div>
-    </footer>
-  )
-}
-
-export default Footer
+      </div> */}

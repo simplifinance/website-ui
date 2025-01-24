@@ -1,7 +1,7 @@
-import { useRouter } from "next/router"
-import React from "react"
+import { useRouter } from "next/router";
+import React from "react";
 
-const ActiveLink = ({ handleClick, children, href, className }) => {
+const ActiveLink : React.FC<{ href: any, className: string, handleClick: (e: React.MouseEvent<HTMLLIElement, MouseEvent>) => void, children: React.ReactNode }> = ({ handleClick, children, href, className }) => {
   const router = useRouter()
   const listStyle = {
     // marginRight: 36.5,
@@ -12,7 +12,7 @@ const ActiveLink = ({ handleClick, children, href, className }) => {
     color: router.asPath === href ? "#F87C00" : "#FFFFFF",
   }
 
-  const handleActiveClick = (e) => {
+  const handleActiveClick = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
     e.preventDefault()
     router.push(href)
   }

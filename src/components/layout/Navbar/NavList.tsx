@@ -1,8 +1,8 @@
 import React from "react"
-import Socials from "../../socials"
-import ActiveLink from "./activeLink"
+import Socials from "../../Socials"
+import ActiveLink from "./ActiveLink"
 
-const NavList = ({ isClicked, handleClick }) => {
+const NavList : React.FC<{isClicked: boolean, handleClick: () => void}> = ({ isClicked, handleClick }) => {
   return (
     <section className="relative bg-[#0E4236] z-30 font-inter text-[32px]">
       <nav

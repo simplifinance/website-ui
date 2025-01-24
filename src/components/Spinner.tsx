@@ -1,8 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-
-
-const Spinner = (props) => {
+                       
+const Spinner = (props: {size: number | undefined, color: string}) => {
   return (
     <Wrapper {...props}>
       <svg
