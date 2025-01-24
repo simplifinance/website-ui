@@ -32,20 +32,17 @@ const TopBar : React.FC<{ isClicked: boolean, handleClick: () => void }> = ({ is
               className="mx-[36.5px]"
               href="/"
               handleClick={handleClick}
-              children={"Home"}
-            ></ActiveLink>
+            >Home</ActiveLink>
             <ActiveLink
               className="mx-[36.5px]"
               href="/#learn"
               handleClick={handleClick}
-              children={"Learn"}
-            ></ActiveLink>
+            >Learn</ActiveLink>
             <ActiveLink
               className="mx-[36.5px]"
               href="/#footer"
               handleClick={handleClick}
-              children={"Community"}
-            ></ActiveLink>
+            >Community</ActiveLink>
           </div>
           <div className="hidden lg:flex">
             <Link href="https://testnet.simplifinance.xyz/" target="_blank" className="w-full p-3 uppercase text-xs flex justify-between items-center gap-2 focus:shadow-sm focus:shadow-200 bg-green1 border border-gray1 rounded-full animate-none text-orange-400 shadow-md shadow-orange-400 hover:shadow-orange-200">
